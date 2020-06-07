@@ -1,0 +1,16 @@
+body {
+    font-family: Montserrat, Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+.container {
+    max-width: 1160px;
+    margin: 0 auto;
+}
+.sub_container {
+    max-width: 940px;
+    margin: 0 auto;
+}
+@import "header";
+@import "menu";
+@import "content";
+@import "form";
+@import "footer";

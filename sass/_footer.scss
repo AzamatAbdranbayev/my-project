@@ -1,0 +1,103 @@
+.footer_box {
+    background: inherit;
+    border-top: 1px solid #D5DAE6;
+    position: relative;
+}
+.footer {
+    &__text {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 30px;
+        color: #021747;
+        mix-blend-mode: normal;
+        opacity: 0.8;
+    }
+    &__link {
+        text-decoration: none;
+        margin-right: 20px;
+    }
+    &__logo {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 29px;
+        text-align: right;
+        text-transform: uppercase;
+        color: #31436A;
+        text-decoration: none;
+    }
+}
+.footer_sign {
+    background: #00091D;
+    padding: 17px 0;
+    &__text {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 16px;
+        text-align: center;
+        color: #FFFFFF;
+        mix-blend-mode: normal;
+    }
+}
+@media screen and (min-width:320px) {
+    .footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 34px 0 41px 0;
+        &__text {
+            display: none;
+        }
+        &__items {
+            margin-bottom: 50px;
+        }
+    }
+    .footer__photo,
+    .footer__icon,
+    .footer__img {
+        display: none;
+    }
+}
+@media screen and (min-width:768px) {
+    .footer {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 66px 20px;
+        &__text {
+            display: inline-block;
+        }
+        &__items {
+            margin-bottom:0;
+        }
+    }
+}
+@media screen and (min-width:1920px) {
+    .footer__photo,
+    .footer__icon,
+    .footer__img {
+        display: inline-block;
+    }
+    .footer {
+        &__photo {
+            position: absolute;
+            right: 50px;
+            bottom: 60px;
+            z-index: 100;
+        }
+        &__img {
+            position: absolute;
+            right: 75px;
+            bottom: 110px;
+            z-index: 99;
+        }
+        &__icon {
+            position: absolute;
+            right: 30px;
+            bottom: 104px;
+            z-index: 99;
+        }
+    }
+}
